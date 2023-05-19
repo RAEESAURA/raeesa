@@ -10,8 +10,7 @@ class MyClient(discord.Client):
         guild = member.guild
         if guild.system_channel is not None:
             to_send = f'Welcome, newcomer {member.mention} to {guild.name}!
-            We hope you enjoy your stay
-            '
+            We hope you enjoy your stay and stay sane here'
             await guild.system_channel.send(to_send)
 
 
